@@ -35,16 +35,6 @@
     <!-- Prism -->
     <link href="css/prism.css" rel="stylesheet" />
 
-    <style>
-        .vertical-center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-    </style>
-
 </head>
 
 <body id="page-top">
@@ -71,9 +61,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="Luke Baughan CV.docx">CV Download</a>
                     </li>
                 </ul>
             </div>
@@ -107,152 +94,21 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="center">
-                            <p class="text-white-50 mb-4 mt-4 ParagraphText">
-                                A mix of the tower defence genre and the first-person shooter genre where the player must defend against waves of alien enemies in order to survive. <br />
-                                They can achieve this by purchasing towers to attack autonomously in addition to shooting the enemies themselves. <br />
-                                Incursion was made entirely using the blueprint system in Unreal Engine 5 (and uses marketplace content for assets).
-                            </p>
-                        </div>
+                <div class="col-lg-6">
+                    <div class="center">
+                        <p class="text-white-50 mb-4 mt-4 text-center ParagraphText">
+                            A mix of the tower defence genre and the first-person shooter genre where the player must defend against waves of alien enemies <br /> in order to survive.
+                            They can achieve this by purchasing towers to attack autonomously in addition to shooting the enemies themselves. <br />
+                            Incursion was made entirely using the blueprint system in Unreal Engine 5 (and uses marketplace content for assets). <br /><br />
+                        </p>
                     </div>
+                </div>
+                <div class="container">
                     <div class="col-lg-6">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/FfDdiYMdQNU" title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Development -->
-    <section class="page-section" id="dev">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h1 class="mt-0">Development</h1>
-                    <hr class="divider my-4">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <br>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="MyVertical-center">
-                        <p class="mb-4 mt-4 ParagraphText">
-                            Firstly, I set up a grid of nodes and performed a breadth-first-search (BFS) between a random node on the first and last row of the grid. <br />
-                            As the BFS adds new nodes to the path, each node is assigned a random minigame (the coloured nodes represent the minigame rooms).
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/BFS_Random RoomPath.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <br>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="MyVertical-center">
-                        <p class="mb-4 mt-4 ParagraphText">
-                            I then had the grid manager spawn minigame rooms on each path node as well as walls on each of the path's neighbour nodes.<br />
-                            A start room and a finish room is spawned on the first and last node in the path respectively.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/DoorsMeshesAdded.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <br>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="MyVertical-center">
-                        <p class="mb-4 mt-4 ParagraphText">
-                            Lastly, I created four different minigame rooms (which all inherit from a base minigame room) and set each path node to spawn a random room at its location. <br />
-                            The number of nodes spawned in the grid changes based on what difficulty the player selects.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/PathFinal.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Minigames -->
-    <section class="page-section bg-primary" id="rooms">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h1 class="text-white mt-0">Minigames</h1>
-                    <hr class="divider light my-4">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <br>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <h2 class="text-white mt-0">Dodgeball</h2>
-                        <hr class="divider light my-4">
-                        <img src="img/DodgeBall.gif" class="img-fluid" alt="Responsive image">
-
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <h2 class="text-white mt-0">Dropper</h2>
-                        <hr class="divider light my-4">
-                        <img src="img/Dropper.gif" class="img-fluid" alt="Responsive image">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <h1 class="text-white mt-0"><br />  </h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <h2 class="text-white mt-0">Bar Jump</h2>
-                        <hr class="divider light my-4">
-                        <img src="img/BarJump.gif" class="img-fluid" alt="Bar Jump Demo">
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <h2 class="text-white mt-0">Spinner</h2>
-                        <hr class="divider light my-4">
-                        <img src="img/Spinner.gif" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
             </div>
@@ -270,23 +126,32 @@
             </div>
             <div class="row justify-content-center">
                 <div class="column justify-content-center">
-                    <div class="col-lg-6 mr-auto text-center">
-                        <i class="fab fa-github fa-3x mb-3 text-muted"></i>
-                        <a class="d-block" href="https://github.com/LukeBaughan" target="_blank">GitHub Profile</a>
-                    </div>
-                </div>
-                <div class="column justify-content-center">
-
                     <div class="col-lg-6 text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <p class="text-muted mb-0"> <a href="mailto:lukebaughan@outlook.com">lukebaughan@outlook.com </a></p>
+                        <a href="mailto:lukebaughan@outlook.com">
+                            <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="column justify-content-center">
-
                     <div class="col-lg-6 mr-auto text-center">
-                        <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
-                        <a class="d-block" href="https://www.linkedin.com/in/luke-baughan/" target="_blank">LinkedIn Profile</a>
+                        <a href="https://www.linkedin.com/in/luke-baughan/">
+                            <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="column justify-content-center">
+                    <div class="col-lg-6 mr-auto text-center">
+                        <a href="https://github.com/LukeBaughan">
+                            <i class="fab fa-github fa-3x mb-3 text-muted"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column justify-content-center">
+                    <div class="col-lg-6 mr-auto text-center">
+                        <a href="https://www.youtube.com/channel/UCbJFMHWzfdHN0FT6C-qCe5Q">
+                            <i class="fab fa-youtube fa-3x mb-3 text-muted"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -296,7 +161,7 @@
     <!-- Footer -->
     <footer class="bg-light py-5">
         <div class="container">
-            <div class="small text-center text-muted">Copyright &copy; 2021 - Luke Baughan </div>
+            <div class="small text-center text-muted">Copyright &copy; 2023 - Luke Baughan</div>
         </div>
     </footer>
 
